@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "nedb": "^1.8.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
