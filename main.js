@@ -24,7 +24,7 @@ main();
 
 
 
-function adicionardestino() {
+function novaViagem() {
     while (true) {
         let destino = prompt("Digite o destino desejado (ou 'sair' para encerrar): ");
         if (destino.toLowerCase() === 'sair') {
@@ -44,4 +44,4 @@ function adicionardestino() {
 }
 
 adicionardestino();
-module.exports = {main}
+module.exports = {novaViagem}

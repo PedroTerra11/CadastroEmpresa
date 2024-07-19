@@ -1,14 +1,19 @@
-import { main } from "./main";
+import { adicionardestino } from "./main";
 const prompt = require("prompt-sync")();
 
+console.log("Ola seja bem vindo!!!")
 
-function mensagem(){
-    console.log(`Olá! Você deseja adicionar uma cidade?`)
-}
+var menu = `
+1. Nova viagem
+2. Informações Viagem
+3. Deletar Viagem
+4. Sair
+`
+var inicial = prompt("Digite a opção: ")
 function iniciarprograma(){
-    switch (prompt) {
-        case "sim":
-            
+    switch (true) {
+        case "1":
+            adicionardestino()
             break;
     
         default:
