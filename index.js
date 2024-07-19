@@ -1,22 +1,38 @@
-import { adicionardestino } from "./main";
+const main = require("./main");
 const prompt = require("prompt-sync")();
+iniciarPrograma()
 
-console.log("Ola seja bem vindo!!!")
+function iniciarPrograma() {
+  
+  console.log("Olá, seja bem-vindo!!!");
 
-var menu = `
+  const menu = `
 1. Nova viagem
 2. Informações Viagem
 3. Deletar Viagem
 4. Sair
-`
-var inicial = prompt("Digite a opção: ")
-function iniciarprograma(){
-    switch (true) {
-        case "1":
-            adicionardestino()
-            break;
-    
-        default:
-            break;
+`;
+
+  let opcao;
+    console.log(menu);
+    opcao = prompt("Digite a opção: ");
+
+    switch (opcao) {
+      case "1":
+        main.novaViagem();
+        break;
+      case "2":
+        //informacaoViagem();
+        break;
+      case "3":
+        //deletar();
+        break;
+      case "4":
+        console.log("Saindo do programa...");
+        break;
+      default:
+        console.log("Opção inválida, digite de novo!");
     }
 }
+
+
